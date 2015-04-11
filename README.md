@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/PythonMexico/pymxweb.png?label=ready&title=Ready)](https://waffle.io/PythonMexico/pymxweb)
 ¿Queres colaborar en el proyecto? Al momento tenemos [![Stories in Ready](https://badge.waffle.io/pyar/pyarweb.png?label=ready&title=Ready)](https://waffle.io/pyar/pymxweb) tareas en
 las que podes colaborar, sube a bordo! 
 pymxweb
