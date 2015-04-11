@@ -1,6 +1,7 @@
-[![Stories in Ready](https://badge.waffle.io/PythonMexico/pymxweb.png?label=ready&title=Ready)](https://waffle.io/PythonMexico/pymxweb)
-¿Queres colaborar en el proyecto? Al momento tenemos [![Stories in Ready](https://badge.waffle.io/pyar/pyarweb.png?label=ready&title=Ready)](https://waffle.io/pyar/pymxweb) tareas en
+
+¿Queres colaborar en el proyecto? Al momento tenemos [![Stories in Ready](https://badge.waffle.io/PythonMexico/pymxweb.png?label=ready&title=Ready)](https://waffle.io/PythonMexico/pymxweb) tareas en
 las que podes colaborar, sube a bordo! 
+
 pymxweb
 =======
 Es la implementación del sitio para Python Mexico basado en el trabajo de los amigos de Python argentina. Aca esta el repo original:
