@@ -1,11 +1,10 @@
-¿Queres colaborar en el proyecto? Al momento tenemos [![Stories in Ready](https://badge.waffle.io/pyar/pyarweb.png?label=ready&title=Ready)](https://waffle.io/pyar/pyarweb) tareas en
+¿Queres colaborar en el proyecto? Al momento tenemos [![Stories in Ready](https://badge.waffle.io/pyar/pyarweb.png?label=ready&title=Ready)](https://waffle.io/pyar/pymxweb) tareas en
 las que podes colaborar, sube a bordo! 
-pyarweb
+pymxweb
 =======
-Es la implementación del sitio para PyAr / Python Argentina hecha con Django
-por su comunidad, wooohooo!
+Es la implementación del sitio para Python Mexico basado en el trabajo de los amigos de Python argentina. Aca esta el repo original:
 
-Mas de 20 personas sprinteando en PyconAr!!!
+https://github.com/PyAr/pymxweb
 
 
 ## ¿Cómo arranco / instalo el proyecto en mi máquina?
@@ -19,12 +18,12 @@ Mas de 20 personas sprinteando en PyconAr!!!
 
 2. Levantar maquina virtual (esto ya instala todas las dependencias):
 
-        $ cd path/to/pyarweb
+        $ cd path/to/pymxweb
         $ vagrant up
 
 3. Entrar a la maquina virtual y levantar servicios:
 
-        $ cd path/to/pyarweb
+        $ cd path/to/pymxweb
         $ vagrant ssh
         vagrant@vagrant $ cd /vagrant/
 
@@ -38,14 +37,14 @@ Debes tener Python 3.3 o 3.4, no hay compatibilidad con Python 2.
   	* Usando *pyvenv*
 
       ```
-	    $ pyvenv3-3 pyarweb
+	    $ pyvenv3-3 pymxweb
       ```
 
     * Usando *virtualenvwrapper*
 
       ```
       $ export VIRTUALENV_PYTHON=/usr/bin/python3
-      $ mkvirtualenv pyarweb
+      $ mkvirtualenv pymxweb
       ```
 
 2. Activas tu virtualenv.
@@ -53,13 +52,13 @@ Debes tener Python 3.3 o 3.4, no hay compatibilidad con Python 2.
   * Mediante *source*
 
       ```
-      $ source pyarweb/bin/activate
+      $ source pymxweb/bin/activate
       ```
 
   * Mediante *virtualenvwrapper*
 
       ```
-      $ workon pyarweb
+      $ workon pymxweb
       ```
 
 3. Si no tenés pip instalado, descarga el .tar.gz desde https://pypi.python.org/pypi/setuptools
@@ -101,7 +100,7 @@ e instalalo con el `python3` de tu virtualenv. Luego de instalar setuptools hace
   2. Correr Celery (usando el comando dentro de tu virtualenv)
 
     ```
-    $ celery -A pyarweb worker --beat --autoreload --loglevel=INFO
+    $ celery -A pymxweb worker --beat --autoreload --loglevel=INFO
     ```
 
 3. Correr el servidor de desarrollo:
