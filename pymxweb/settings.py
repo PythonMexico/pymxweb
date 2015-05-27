@@ -1,5 +1,5 @@
 """
-Django settings for pyarweb project.
+Django settings for pymxweb project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'c2*wzebi9p3vola_tamd7zu4=4(2^9m$v0vdj(5_ybhhw6t629'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Sites framework
 SITE_ID = 1
@@ -35,7 +35,7 @@ TEMPLATE_DEBUG = True
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 # Django registration
 # https://django-registration.readthedocs.org/en/latest/quickstart.html
@@ -43,11 +43,9 @@ ACCOUNT_ACTIVATION_DAYS = 7
 DEFAULT_FROM_EMAIL = 'webmaster@python.org.ar'
 LOGIN_REDIRECT_URL = '/'
 
-
 # Disqus
-DISQUS_API_KEY = '3t6eKCbxRGuIG3SmdHb8malOf1h2WxSYEfXbBjWyNBaFLMyD1GOIfWYFciqJqo69'
-DISQUS_WEBSITE_SHORTNAME = 'PyAr'
-
+# DISQUS_API_KEY = '3t6eKCbxRGuIG3SmdHb8malOf1h2WxSYEfXbBjWyNBaFLMyD1GOIfWYFciqJqo69'
+# DISQUS_WEBSITE_SHORTNAME = 'PyAr'
 
 # Application definition
 
@@ -60,7 +58,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # pyarweb apps
+    # pymxweb apps
     'community',
     'news',
     'pycompanies',
@@ -113,10 +111,9 @@ MIDDLEWARE_CLASSES = (
     'pagination.middleware.PaginationMiddleware',
 )
 
-ROOT_URLCONF = 'pyarweb.urls'
+ROOT_URLCONF = 'pymxweb.urls'
 
-WSGI_APPLICATION = 'pyarweb.wsgi.application'
-
+WSGI_APPLICATION = 'pymxweb.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
@@ -131,9 +128,8 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'es-AR'
-
-TIME_ZONE = 'America/Argentina/Buenos_Aires'
+LANGUAGE_CODE = 'es-MX'
+TIME_ZONE = 'America/Mexico_City'
 
 # Activa todo el sitio con el horario de Argentina
 # from django.utils import timezone
@@ -145,7 +141,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-FORMAT_MODULE_PATH = 'pyarweb.formats'
+FORMAT_MODULE_PATH = 'pymxweb.formats'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
@@ -183,7 +179,7 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend",
 )
 
-PLANET = {"USER_AGENT": "pyarweb/0.1"}
+PLANET = {"USER_AGENT": "pymxweb/0.1"}
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
